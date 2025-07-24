@@ -24,7 +24,9 @@ def download_images(urls, output_folder):
                     img_url = img.get("src")
 
                     # ✅ SKIP base64 images right away
-                    if not img_url or img_url.startswith("data:"):
+                    if not img_url:
+                        continue
+                    if img_url.startswith("data:") or img_url.startswith("blob:") or img_url.startswith("javascript:") or "://" not in img_url:
                         continue
 
                     full_url = urljoin(url, img_url)
