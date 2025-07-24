@@ -22,8 +22,8 @@ def download_images(urls, output_folder):
 
                 for img in img_tags:
                     img_url = img.get("src")
-                    if not img_url:
-                        continue
+if not img_url or img_url.startswith("data:"):
+    continue  # skip inline base64 images
 
                     full_url = urljoin(url, img_url)
                     filename = get_filename_from_url(full_url)
