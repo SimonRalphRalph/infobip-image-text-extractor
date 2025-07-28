@@ -1,6 +1,6 @@
-# Infobip Image Text Extractor
+# Munro — Website Image Text Extractor
 
-This tool crawls a website, downloads all visible images, runs OCR on them, and saves the results for review and translation.
+Munro crawls a website, downloads all visible images, runs OCR on them, and saves the results for review, and it provides a breakdown of the entire front-end website copy. Munro is a significant time-saver for pricing website language services, expecially when text within images need to be translated.
 
 ## 🔧 Features
 
