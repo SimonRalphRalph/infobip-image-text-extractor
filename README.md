@@ -2,7 +2,7 @@
 
 Munro crawls a website, downloads all visible images, runs OCR on them, and saves the results for review, and it provides a breakdown of the entire front-end website copy. Munro is a significant time-saver for pricing website language services, expecially when text within images need to be translated.
 
-## 🔧 Features
+## Features
 
 - Crawls all linked pages from a given base URL
 - Downloads image assets, skipping invalid or base64 blobs
@@ -10,7 +10,7 @@ Munro crawls a website, downloads all visible images, runs OCR on them, and save
 - Outputs a CSV (`output/results.csv`) with detected text
 - Optional script to isolate images containing text only
 
-## 📁 Folder Structure
+## Folder Structure
 
 - `utils/` – contains the main scripts
   - `crawler.py` – crawls the site
